@@ -1,0 +1,15 @@
+name: notmiwae
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - numpy
+      - tensorflow==2.16.2
+      - tensorflow-probability
+      - keras
+      - matplotlib
+      - pandas
+      - scikit-learn
+      - jupyter
