@@ -81,7 +81,7 @@ for _ in range(runs):
 
     # ---- introduce missing process
     Xnan, Xz = introduce_mising(Xtrain)
-    S = np.array(~np.isnan(Xnan), dtype=np.float)
+    S = np.array(~np.isnan(Xnan), dtype=float)
     Xval, Xvalz = introduce_mising(Xval_org)
 
     # ------------------- #

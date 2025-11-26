@@ -26,8 +26,8 @@ class MIWAE:
         self.n, self.d = X.shape
 
         # ---- missing
-        self.S = np.array(~np.isnan(X), dtype=np.float)
-        self.Sval = np.array(~np.isnan(Xval), dtype=np.float)
+        self.S = np.array(~np.isnan(X), dtype=float)
+        self.Sval = np.array(~np.isnan(Xval), dtype=float)
 
         if np.sum(self.S) < self.d * self.n:
             self.X = self.Xorg.copy()
